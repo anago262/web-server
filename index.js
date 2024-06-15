@@ -22,7 +22,8 @@ app.get('/about', function (req, res) {
     res.send('about')
   })
 
-app.listen(3000, function() {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function() {
     console.log("I am running")
 })
 
